@@ -310,6 +310,8 @@ Como usuario preocupado por mi salud (*health-conscious user*), quiero ver mi cl
 
 ---
 
+### IBW Calculation
+
 **Historia de usuario:**
 Como usuario (*user*), quiero calcular mi peso ideal, para tener una referencia saludable para mi altura.
 
@@ -319,7 +321,7 @@ Como usuario (*user*), quiero calcular mi peso ideal, para tener una referencia 
 [Fichero feature](python-project-healthcalc/features/ibw.feature)
 
 ---
-### 📈 Basal Metabolic Rate (WHO)
+###  Basal Metabolic Rate (WHO)
 
 **Historia de usuario:**
 Como entusiasta del fitness (*fitness enthusiast*), quiero calcular mi BMR, para saber mis necesidades diarias de calorías en reposo.
