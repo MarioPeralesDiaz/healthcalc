@@ -51,9 +51,9 @@ class HealthCalcImpl(HealthCalc):
     
     # -- IBW metric implementation (Lorentz formula)
 
-    def IBW_Lorentz_metric(self, height: float, gender: str, height_unit: str = "cm") -> float:
+    def ibw_lorentz_metric(self, height: float, gender: str, height_unit: str = "cm") -> float:
         
-        height = self.height_to_cm(height, h_unit)
+        height = self.height_to_cm(height, height_unit)
 
         gender = gender.lower() # We converted the gender to lowercase to avoid problems when it is  enetered in uppercase or mixed case.
 
@@ -78,9 +78,9 @@ class HealthCalcImpl(HealthCalc):
     # -- This function calculates the Basal Metabolic Rate (BMR) based the OMS standards. 
     # The same parameters (except height) as the previous metrics are required, along with age.
 
-    def BMR_Metric(self, weight: float, age: int, gender: str, weight_unit: str = "kg") -> float:
+    def bmr_metric(self, weight: float, age: int, gender: str, weight_unit: str = "kg") -> float:
         
-        weight = self.weight_to_kg(weight, w_unit)
+        weight = self.weight_to_kg(weight, weight_unit)
 
         if weight <= 0  or age <= 0:
             raise InvalidHealthDataException("The parameters entered must be positive.")
